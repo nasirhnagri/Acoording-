@@ -1,0 +1,26 @@
+
+  .accordion {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  .accordion-item {
+    border-bottom: 1px solid #ccc;
+  }
+  .accordion-item:last-child {
+    border-bottom: none;
+  }
+  .accordion-header {
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: #f1f1f1;
+  }
+  .accordion-header:hover {
+    background-color: #e0e0e0;
+  }
+  .accordion-content {
+    display: none;
+    padding: 10px 15px;
+  }
+  .accordion-content.active {
+    display: block;
+  }
