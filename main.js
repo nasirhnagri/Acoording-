@@ -10,7 +10,13 @@ document.addEventListener("DOMContentLoaded", () => {
         accordionContent.classList.toggle('active');
   
         // Collapse other accordion items
-        
+        const siblings = Array.from(accordionItem.parentNode.children).filter(item => item !== accordionItem);
+        siblings.forEach(sibling => {
+          const content = sibling.querySelector('.accordion-content');
+          if (content.classList.contains('active')) {
+            content.classList.remove('active');
+          }
+        });
       });
     });
   });
