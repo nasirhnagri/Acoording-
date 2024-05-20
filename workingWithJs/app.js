@@ -16,21 +16,21 @@
 // Objects are usually created to represent entities of 
 // the real world, like users, orders and so on:
  
-let user = {
-    name: "Nasir",
-    age: 20
-  };
+// let user = {
+//     name: "Nasir",
+//     age: 20
+//   };
 
-  let users = {
-    name: "Ali",
-    age: 33
-  };
+//   let users = {
+//     name: "Ali",
+//     age: 33
+//   };
   
-  users.sayHi = function() {
-    alert("Hello!");
-  };
+//   users.sayHi = function() {
+//     alert("Hello!");
+//   };
   
-  users.sayHi(); // Hello!
+//   users.sayHi(); // Hello!
 
 //   Here we’ve just used a Function Expression to create a function and assign it to the property user.sayHi of the object.
 
@@ -58,30 +58,69 @@ let user = {
 
 // these objects do the same
 
-user = {
-    sayHi: function() {
-      alert("Hello");
-    }
-  };
+// user = {
+//     sayHi: function() {
+//       alert("Hello");
+//     }
+//   };
   
   // method shorthand looks better, right?
-  user = {
-    sayHi() { // same as "sayHi: function(){...}"
-      alert("Hello");
-    }
-  };
+  // user = {
+  //   sayHi() { // same as "sayHi: function(){...}"
+  //     alert("Hello");
+  //   }
+  // };
 
   // =============================================
 
-  let users = {
-    name: "John",
-    age: 30,
+  // let users = {
+  //   name: "John",
+  //   age: 30,
   
-    sayHi() {
-      // "this" is the "current object"
-      alert(this.name);
-    }
+  //   sayHi() {
+  //     // "this" is the "current object"
+  //     alert(this.name);
+  //   }
   
-  };
+  // };
   
-  user.sayHi(); // John
+  // user.sayHi(); // John
+
+
+// console.log("Hello");
+// // is the same as
+// console.log("Hello");
+
+// Find the value of the first element with a value over 18:
+
+// const ages = [3, 10, 18, 20];
+// console.log(ages)
+
+
+// function checkAge(age) {
+//   return age > 18;
+// }
+
+// function myFunction() {
+//   // document.getElementById("demo").innerHTML = ages.find(checkAge);
+
+//   console.log()
+// }
+
+
+// let findMethod = ["nasir", "hussain", "muntazir", 12,34,54,["ali", 12,"6th","glt"]]
+
+// console.log(findMethod)
+// let result = findMethod.find([2])
+// ===========================================================================
+// ===========================================================================
+// ===========================================================================
+
+// Array includes
+
+// let array = ["hussain","Ali","Nasir","ibrahim", 11,12,23,33,43,32,24]
+
+// console.log(array)
+// let newArr = array.includes(12)
+// console.log(newArr)
+
